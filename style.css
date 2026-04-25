@@ -1,0 +1,74 @@
+:root {
+  --donker: #232226;
+  --blauw:  #3457BF;
+  --teal:   #4E8DA6;
+  --licht:  #65B6BF;
+  --navy:   #345275;
+  --tekst:  #e2e2e2;
+  --gedempt:#9ca3af;
+}
+.container{
+  height: fit-content;
+  width: fit-content;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+body {
+  background: var(--donker);
+  color: var(--tekst);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a { color: var(--licht); }
+
+header {
+  background: var(--navy);
+}
+
+header h1 {
+  color: var(--licht);
+  font-size: 2rem;
+}
+
+.nav {
+  background:#232226;
+}
+aside {
+  background: #1c1c20;
+  height: 100%;
+}
+
+aside p, aside li, aside small { color: var(--gedempt); font-size: .9rem; }
+aside img { width: 100px; height: 100px; object-fit: cover}
+
+article.kaart {
+  background: #1c1c20;
+  height: 100%;
+}
+
+
+article.kaart h5 { color: var(--tekst); margin-bottom: .3rem; }
+article.kaart p  { color: var(--gedempt); font-size: .875rem; }
+
+.form-control, .form-select {
+  background: #1c1c20;
+  border-color: #3a3a42;
+  color: var(--tekst);
+}
+
+.form-control::placeholder { color: #555; }
+.form-label { color: var(--gedempt); font-size: .9rem; }
+
+.info-tabel th { color: var(--licht); width: 38%; }
+.info-tabel td { color: var(--gedempt); }
+
+footer {
+  background: var(--navy);
+  color: var(--gedempt);
+  font-size: 1rem;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+

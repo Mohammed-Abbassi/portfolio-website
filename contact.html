@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="container-fluid">
+    <span class="container d-flex align-items-center gap-3">
+      <img src="logo" width="100" height="300" alt="">
+      <h1>Mohammed Abbassi</h1>
+    </span>
+  </header>
+
+  <nav>
+    <ul class="nav container">
+      <li class="nav-item"><a class="nav-link actief" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="portfolio.html">Projecten</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row g-4">
+
+      <main class="col-12 col-md-8">
+        <h2 style="color:var(--licht);" class="mb-4">Neem contact op</h2>
+
+        <form novalidate>
+          <div class="row g-3 mb-3">
+            <div class="col-12 col-md-6">
+              <label for="voornaam" class="form-label">Voornaam</label>
+              <input type="text" class="form-control" id="voornaam" name="voornaam" placeholder="Jouw voornaam" required>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="achternaam" class="form-label">Achternaam</label>
+              <input type="text" class="form-control" id="achternaam" name="achternaam" placeholder="Jouw achternaam" required>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mailadres</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="jouw@email.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="onderwerp" class="form-label">Onderwerp</label>
+            <select class="form-select" id="onderwerp" name="onderwerp">
+              <option value="">Kies een onderwerp...</option>
+              <option value="stage">Stageopportuniteit</option>
+              <option value="samenwerking">Samenwerking</option>
+              <option value="vraag">Algemene vraag</option>
+              <option value="anders">Anders</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="bericht" class="form-label">Bericht</label>
+            <textarea class="form-control" id="bericht" name="bericht" rows="6" placeholder="Schrijf hier jouw bericht..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-info text-dark fw-semibold px-4">Verstuur bericht</button>
+        </form>
+      </main>
+
+      <aside class="col-12 col-md-4">
+        <h5>Contactgegevens</h5>
+        <ul>
+          <li class="mb-2"><a href="mailto:mohammed.abbassi@student.ap.be">mohammed.abbassi@student.ap.be</a></li>
+          <li class="mb-2"><small>+32 123 45 67 89</small></li>
+          <li class="mb-2"><small>AP Hogeschool Antwerpen</small></li>
+        </ul>
+        <h6>Beschikbaarheid</h6>
+        <p><small>Reactie binnen 24–48 uur</small></p>
+      </aside>
+    </div>
+  </div>
+  <footer class="container-fluid">
+    <span class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <small>2025 Mohammed Abbassi</small>
+    </span>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
